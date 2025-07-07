@@ -31,18 +31,6 @@ body{
   background: #EF2F3C;
 }
 
-.hours {
-  background: #eeeeee;
-  color: #183059;
-}
-
-.minutes {
-  background: #276FBF;
-}
-
-.seconds {
-  background: #F0A202;
-}
 
 .numbers {
   font-family: 'Montserrat', sans-serif;
@@ -52,8 +40,6 @@ body{
 }
 
 
-
-}
 
 
     </style>
@@ -77,7 +63,7 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('November 4&5,2025 00:00:00');
+const myDate = new Date('November 4,2025 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -87,7 +73,8 @@ let timer = setInterval(function() {
   const today = new Date().getTime();
 
   // get the difference
-  const diff = myDate - today;
+  const diff = myDate - today('July 07,2025 00:00:00');
+    
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
